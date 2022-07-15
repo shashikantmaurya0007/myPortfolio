@@ -2,12 +2,11 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import Pomodoro from "../../Assets/Projects/Pomodoro.png";
+import VodkaUI from "../../Assets/Projects/VodkaUI.png";
+import oshoMedia from "../../Assets/Projects/oshoMedia.png";
+import FrontEndVideoLibrary from "../../Assets/Projects/FrontEndVideoLibrary.png";
+import DrinksBreak from "../../Assets/Projects/DrinksBreak.png";
 
 function Projects() {
   return (
@@ -23,68 +22,56 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={oshoMedia}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              title="OshoMedia(Socail-Media)"
+              description="OshoShare is a social media platform created for oshofollowers. features:authenticaion , infinitescroll,debounce search,toggle theme,user can add post, edit post ,comment on post, follow and  unfollow user ,add comment edit comment and deleted comment, share post "
+              ghLink="https://github.com/shashikantmaurya0007/osho-media"
+              demoLink="https://osho-media.vercel.app/"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={FrontEndVideoLibrary}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
+              title="FrontEndVideoLibrary(Video-Library)"
+              description="A frontEnd video library is created with an intention to provide frontend video resources at one point. featurs:authentication ,filter video by categories,like video ,add to watch later,create palylist ,debounce video search"
+              ghLink="https://github.com/shashikantmaurya0007/video_lib"
+              demoLink="https://frontend-library.netlify.app/"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={DrinksBreak}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
+              title="DrinksBreak(E-Commerce)"
+              description="DrinksBreak is an online store to buy alcohol.It has wide range of categories from whisky to beer.features: authentication ,debounce search and button click,filter on basis of rating,categories,price, add to wishlist,add to cart ,checkout,razorpay payment integration"
+              ghLink="https://github.com/shashikantmaurya0007/Drinks-Break-ecommerce-app"
+              demoLink="https://drinks-break-ecommerce-app.vercel.app/"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={leaf}
+              imgPath={VodkaUI}
               isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
+              title="Vodka-UI(component Library)"
+              description="This component library provides you styled component which are fully responsive .If you have used bootstrap or tailwind before this component library will seems very much comfortable ."
+              ghLink="https://github.com/shashikantmaurya0007/Vodka-component-library"
+              demoLink="https://vodka-ui-componentlib.netlify.app/"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={suicide}
+              imgPath={Pomodoro}
               isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={emotion}
-              isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
+              title="Pomodoro(Time-Management)"
+              description="Pomodoro app helps you create Task list with timer.feature: user can create task,edit tast delete task,task list will persist on page refresh,Timer will start on click of task list,10 min break timer after each task,toggle theme"
+              ghLink="https://github.com/shashikantmaurya0007/pomodora-app-react"
+              demoLink="https://pomodora-app.netlify.app/"
             />
           </Col>
         </Row>
